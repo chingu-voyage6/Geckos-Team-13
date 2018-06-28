@@ -33,3 +33,73 @@ body, html {
     height: 100%;
     width: 100%;
 }
+
+/*the header is fixed and brought to the front*/
+#header {
+  text-align: left;  
+  position: fixed;
+  left: 0;  
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2000;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*set up the opacity of semi transparent theme */
+#header .semi-trans-banner {
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  background: #212727;  
+  opacity: 0.3;  
+}
+
+/*inner content of the theme header*/
+#header .inner {
+  min-width: 800px;
+  position: relative;
+}
+
+/*align items vertically */
+.inner {
+  display: flex;
+  align-items: center;
+  height: 64px;  
+}
+
+/*flickr logo*/
+.logo {
+  display: flex;
+  padding-left: 24px;
+}
+
+/*login/signup section*/
+.nav {
+  padding-right: 24px;
+}
+
+/*align login to the right*/
+.nav nav {
+  float: right;
+}
+
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*the front page hero img section*/
+.banner {
+  position: absolute;
+  left: 0;
+  margin-right: 0;
+  margin-left: 0;  
+}
+
+.banner img {
+  width: 100%;
+  height: 100vh;
+}
