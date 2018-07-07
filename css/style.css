@@ -53,12 +53,12 @@ body, html {
   height: 64px;
   width: 100%;
   background: #212727;  
-  opacity: 0.3;  
+  opacity: 0.5;  
 }
 
 /*inner content of the theme header*/
 #header .inner {
-  min-width: 800px;
+
   position: relative;
 }
 
@@ -78,17 +78,37 @@ body, html {
 /*login/signup section*/
 .nav {
   padding-right: 24px;
+  margin-left: auto;
 }
 
 /*align login to the right*/
 .nav nav {
-  float: right;
+  display: flex;
+  margin-right: 0;
+  justify-content: flex-end;
 }
 
+a {
+  text-decoration: none;  
+}
 
 .nav a {
-  text-decoration: none;
   color: #fff;
+  margin-left: 23px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; 
+  padding:  5px 0;
+}
+
+#signup {
+  color: #000;
+  background-color: #fff;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 /*the front page hero img section*/
@@ -96,10 +116,102 @@ body, html {
   position: absolute;
   left: 0;
   margin-right: 0;
-  margin-left: 0;  
+  margin-left: 0; 
+  width: 100%; 
+}
+
+.inspiration {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  align-items: center;
+  display: flex;
+}
+
+.inspiration div {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.inspiration h1 {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 600;  
+  margin: .67em 0;
+  text-align: center;
+  color: #fff
+}
+
+.inspiration h3 {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600; 
+  text-align: center;
+  color: #fff; 
+  margin: 1em 0; 
+  margin-bottom: 50px; 
+}
+
+.inspiration a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  width: 200px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 22px;
+  font-weight: 600;  
+  background-color: #fff;
+  color: #000;
+  padding: 0 20px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
 }
 
 .banner img {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .nav a {
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    margin: 8px;
+  }
+  #signup {
+    display: none;
+  }
+  .inspiration h3 {
+    display: none;
+  }
+  .inspiration h1 {
+    font-size: 37px;
+  }
+  .inspiration a {
+    width: 90px;
+    font-size: 16px;
+    line-height: 32px;
+    height: 44px;
+    padding: 5px 0;
+    font-weight: 800;
+  }
+} 
+
+/* Fading animation from w3schools.com*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation: fade 1.5s forwards;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
 }
