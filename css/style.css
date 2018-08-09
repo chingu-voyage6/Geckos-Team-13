@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
   font-size: 62.5%;
   /*10px browser default  */
@@ -217,3 +218,222 @@ a {
     opacity: 1;
   }
 }
+=======
+html {
+ font-size: 62.5%;
+   /*10px browser default  */
+}
+/* ### Headings###*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  /*font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;*/
+  font-family: 'Open Sans','Helvetica Neue', sans-serif;
+  font-size: 1.875rem;
+  font-weight: normal;
+
+}
+
+body p {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+}
+
+body{
+  text-align: center;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+/*the header is fixed and brought to the front*/
+#header {
+  text-align: left;  
+  position: fixed;
+  left: 0;  
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2000;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*set up the opacity of semi transparent theme */
+#header .semi-trans-banner {
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  background: #212727;  
+  opacity: 0.5;  
+}
+
+/*inner content of the theme header*/
+#header .inner {
+
+  position: relative;
+}
+
+/*align items vertically */
+.inner {
+  display: flex;
+  align-items: center;
+  height: 64px;  
+}
+
+/*flickr logo*/
+.logo {
+  display: flex;
+  padding-left: 24px;
+}
+
+/*login/signup section*/
+.nav {
+  padding-right: 24px;
+  margin-left: auto;
+}
+
+/*align login to the right*/
+.nav nav {
+  display: flex;
+  margin-right: 0;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;  
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 23px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; 
+  padding:  5px 0;
+}
+
+#signup {
+  color: #000;
+  background-color: #fff;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*the front page hero img section*/
+.banner {
+  position: absolute;
+  left: 0;
+  margin-right: 0;
+  margin-left: 0; 
+  width: 100%; 
+}
+
+.inspiration {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  align-items: center;
+  display: flex;
+}
+
+.inspiration div {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.inspiration h1 {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 600;  
+  margin: .67em 0;
+  text-align: center;
+  color: #fff
+}
+
+.inspiration h3 {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600; 
+  text-align: center;
+  color: #fff; 
+  margin: 1em 0; 
+  margin-bottom: 50px; 
+}
+
+.inspiration a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  width: 200px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 22px;
+  font-weight: 600;  
+  background-color: #fff;
+  color: #000;
+  padding: 0 20px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .nav a {
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    margin: 8px;
+  }
+  #signup {
+    display: none;
+  }
+  .inspiration h3 {
+    display: none;
+  }
+  .inspiration h1 {
+    font-size: 37px;
+  }
+  .inspiration a {
+    width: 90px;
+    font-size: 16px;
+    line-height: 32px;
+    height: 44px;
+    padding: 5px 0;
+    font-weight: 800;
+  }
+} 
+
+/* Fading animation from w3schools.com*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation: fade 1.5s forwards;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+>>>>>>> 3051da85df7ba9a0c1e18b1ff30fbd58fee0f62a
